@@ -1,0 +1,337 @@
+/* ===========================GLOBALS============================*/
+* {
+  border-radius: 0 !important;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size:14px;
+  line-height: 22px;
+  color:#000000;
+}
+
+body {
+  position: relative;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  color:#000000;
+}
+
+h1 {
+  font-size: 26px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+.white {
+  color:#ffffff;
+}
+
+.red {
+  color:#f40000;
+}
+
+.blue {
+  color:#1e3f98;
+}
+
+
+
+/* ===========================NAV============================*/
+#main-nav {
+  background: url(../img/white-bg.png);
+  z-index:9999;
+}
+
+#main-nav:hover {
+  background:#ffffff;
+}
+
+#main-nav a {
+  color:#cccccc;
+  padding-bottom:4px;
+  transition: color .5s ease;
+}
+
+#main-nav a:hover {
+  color:#f40000;
+  padding-bottom:4px;
+}
+
+#bs-example-navbar-collapse-1 {
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.nav .active {
+  color: #f40000 !important;
+}
+
+.nav .active a {
+  background:none !important;
+  color:#f40000 !important;
+}
+
+.logo {
+  margin-top:10px;
+}
+
+.logo2 {
+  font-size:15px;
+}
+
+#blink {
+
+}
+
+
+
+
+/* ===========================HOME============================*/
+#home {
+  min-height: 800px;
+  padding-top:200px;
+  color:#f40000;
+  background-image: url(../img/mast-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 3;
+}
+
+.intro {
+  width: 75%;
+  position: fixed;
+  left: 50%;
+  margin-left: -37.5%;
+  z-index:4;
+}
+
+.intro-btn {
+  margin-top:30px;
+  border:3px solid #1e3f98;
+  background:none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color:#1e3f98;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.intro-btn:hover {
+  color:#ffffff;
+  background: #1e3f98;
+  border:3px solid #1e3f98;
+}
+
+
+
+/* ===========================QUALITY============================*/
+#quality {
+  padding-top:200px;
+  padding-bottom:300px;
+  position: relative;
+  z-index:1;
+  background-image: url(../img/mast3-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#quality h1 {
+  font-size: 30px;
+  font-weight: lighter;
+}
+
+#quality p {
+  font-size:22px;
+  font-weight: lighter;
+  line-height: 28px;
+}
+
+
+
+
+/* ===========================PORTFOLIO============================*/
+#portfolio {
+  background:#ffffff;
+  z-index:10;
+  position: relative;
+}
+
+#portfolio1 {
+  background-image: url(../img/project-1.jpg);
+  min-height:400px;
+  text-indent: -9999px;
+  padding-top:140px;
+  padding-left:15px;
+  padding-right:15px;
+}
+
+#portfolio2 {
+  background-image: url(../img/project-2.jpg);
+  min-height:400px;
+  text-indent: -9999px;
+  padding-top:140px;
+  padding-left:15px;
+  padding-right:15px;
+}
+
+#portfolio3 {
+  background-image: url(../img/project-3.jpg);
+  min-height:400px;
+  text-indent: -9999px;
+  padding-top:140px;
+  padding-left:15px;
+  padding-right:15px;
+}
+
+#portfolio1:hover,
+#portfolio2:hover,
+#portfolio3:hover {
+  text-indent: 0;
+  background:#f40000;
+}
+
+.border-under {
+  text-decoration: underline;
+}
+
+
+/* ===========================Skills============================*/
+#skills {
+  padding-top:130px;
+  padding-bottom:150px;
+  background-image: url(../img/mast2-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 1000;
+  position: relative;
+}
+
+#skills h2 {
+  color:#eeeeee;
+}
+
+#skills h2:hover {
+  color:#ffffff;
+}
+
+.skill-border {
+  border:solid 4px #ffffff;
+  padding-top:5px;
+  padding-bottom:20px;
+}
+
+/* ===========================ABOUT============================*/
+#about {
+  padding-top:100px;
+  background: #ffffff;
+  z-index:3;
+  position: relative;
+}
+
+.about-paragraph {
+  padding-top:150px;
+}
+
+#about > .nav > .active {
+  border-bottom: solid 4px #f40000;
+}
+
+.nav-tabs {
+  border: none;
+  position: absolute;
+  margin-top:50px;
+  z-index:1;
+}
+
+.nav-tabs > li {
+  margin-left:15px;
+}
+
+.nav-tabs > li > a {
+  border: none;
+  padding-left:0;
+  padding-right:0;
+  padding-bottom:0;
+}
+
+.nav-tabs > li > a:hover {
+  background:none !important;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover {
+  border: none;
+}
+
+.tab-pane .active {
+  border: none !important;
+}
+
+.tab-content {
+  border: none !important;
+}
+
+
+
+
+
+
+/* ===========================CONTACT============================*/
+#contact {
+  padding-top:100px;
+  background:#dddddd;
+  min-height: 700px;
+  position: relative;
+  z-index: 3;
+}
+
+
+
+
+/* ===========================UNDERLINE ANIMATION============================*/
+.test:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  bottom: -2px;
+  left: 0;
+  background-color: #f40000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.test:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+
+@media (max-width: 600px) {
+  #about h1 {
+    font-size:18px;
+    padding-top:20px;
+  }
+}
