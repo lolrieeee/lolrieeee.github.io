@@ -246,7 +246,7 @@ h2 {
 }
 
 .about-paragraph {
-  padding-top:150px;
+  padding-top:130px;
 }
 
 #about > .nav > .active {
@@ -256,7 +256,7 @@ h2 {
 .nav-tabs {
   border: none;
   position: absolute;
-  margin-top:50px;
+  margin-top:30px;
   z-index:1;
 }
 
@@ -293,11 +293,29 @@ h2 {
 
 
 
+/* ===========================QUOTE============================*/
+#quote {
+  background-image: url(../img/mast4-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top:80px;
+  padding-bottom:80px;
+}
+
+#quote h1 {
+  line-height: 36px;
+}
+
+.author {
+  font-size:30px;
+  font-weight: 300;
+}
+
 
 /* ===========================CONTACT============================*/
 #contact {
   padding-top:100px;
-  background:#dddddd;
+  background:#ffffff;
   min-height: 700px;
   position: relative;
   z-index: 3;
