@@ -110,9 +110,9 @@ h2 {
   min-height: 800px;
   padding-top:200px;
   color:#f40000;
-  background-image: url(../img/mast-bg.jpg);
-  background-size: cover;
-  background-attachment: fixed;
+  background-image: url(../img/mast-bg.jpg) !important;
+  background-size: cover !important;
+  background-attachment: fixed !important;
   position: relative;
   z-index: 3;
 }
@@ -153,10 +153,10 @@ h2 {
   padding-bottom:300px;
   position: relative;
   z-index:6;
-  background-image: url(../img/mast3-bg.jpg);
-  background-color: #ffffff;
-  background-size: cover;
-  background-attachment: fixed;
+  background-image: url(../img/mast3-bg.jpg) !important;
+  background-color: #ffffff !important;
+  background-size: cover !important;
+  background-attachment: fixed !important;
 }
 
 #quality h1 {
@@ -228,9 +228,9 @@ h2 {
 #skills {
   padding-top:130px;
   padding-bottom:150px;
-  background-image: url(../img/mast2-bg.jpg);
-  background-size: cover;
-  background-attachment: fixed;
+  background-image: url(../img/mast2-bg.jpg) !important;
+  background-size: cover !important;
+  background-attachment: fixed !important;
   z-index: 1000;
   position: relative;
 }
@@ -306,9 +306,9 @@ h2 {
 
 /* ===========================QUOTE============================*/
 #quote {
-  background-image: url(../img/mast4-bg.jpg);
-  background-size: cover;
-  background-attachment: fixed;
+  background-image: url(../img/mast4-bg.jpg) !important;
+  background-size: cover !important;
+  background-attachment: fixed !important;
   padding-top:80px;
   padding-bottom:80px;
 }
