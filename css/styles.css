@@ -146,7 +146,7 @@ h2 {
   padding-top:200px;
   padding-bottom:300px;
   position: relative;
-  z-index:1;
+  z-index:6;
   background-image: url(../img/mast3-bg.jpg);
   background-size: cover;
   background-attachment: fixed;
@@ -175,6 +175,8 @@ h2 {
 
 #portfolio1 {
   background-image: url(../img/project-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   min-height:400px;
   text-indent: -9999px;
   padding-top:140px;
@@ -184,6 +186,8 @@ h2 {
 
 #portfolio2 {
   background-image: url(../img/project-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   min-height:400px;
   text-indent: -9999px;
   padding-top:140px;
@@ -193,6 +197,8 @@ h2 {
 
 #portfolio3 {
   background-image: url(../img/project-3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   min-height:400px;
   text-indent: -9999px;
   padding-top:140px;
@@ -210,7 +216,6 @@ h2 {
 .border-under {
   text-decoration: underline;
 }
-
 
 /* ===========================Skills============================*/
 #skills {
@@ -289,7 +294,11 @@ h2 {
   border: none !important;
 }
 
-
+.larry-img {
+  background-image:url(../img/larry.png);
+  background-repeat: no-repeat;
+  height:400px;
+}
 
 
 
