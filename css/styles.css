@@ -148,6 +148,7 @@ h2 {
   position: relative;
   z-index:6;
   background-image: url(../img/mast3-bg.jpg);
+  background-color: #ffffff;
   background-size: cover;
   background-attachment: fixed;
 }
