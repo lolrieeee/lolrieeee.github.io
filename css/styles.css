@@ -213,9 +213,21 @@ h2 {
   padding-right:15px;
 }
 
+#portfolio4 {
+  background-image: url(../img/project-4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height:400px;
+  text-indent: -9999px;
+  padding-top:140px;
+  padding-left:15px;
+  padding-right:15px;
+}
+
 #portfolio1:hover,
 #portfolio2:hover,
-#portfolio3:hover {
+#portfolio3:hover,
+#portfolio4:hover {
   text-indent: 0;
   background:#f40000;
 }
