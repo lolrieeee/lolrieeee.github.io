@@ -1,0 +1,19 @@
+#landing-container {
+    width:600px;
+    margin:0 auto;
+    margin-top:200px;
+}
+
+svg > g > polygon {
+    opacity:0;
+    transition: .15s opacity ease-out;
+    transform: scaleX(0);
+    transform-origin: center center;
+    transform: rotate(90deg);
+}
+
+svg > g > polygon.comeIn {
+    opacity: 1;
+    transform: scaleX(1);
+    transition: .15s all ease-out;
+}
