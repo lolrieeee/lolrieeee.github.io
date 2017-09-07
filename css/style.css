@@ -197,6 +197,13 @@ nav a {
     overflow: scroll;
 }
 
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    .portfolioset {
+        width:100%;
+    }
+}
+
 .portfolioset img {
     width:100%;
     margin-bottom:20px;
