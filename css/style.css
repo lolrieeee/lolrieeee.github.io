@@ -169,6 +169,14 @@ nav a {
     text-align: center;
 }
 
+.intro-title {
+    line-height: 24px;
+}
+
+.intro-title br {
+    display: none;
+}
+
 /* SKILLS */
 #skills {
     height:100vh;
@@ -220,7 +228,7 @@ nav a {
 
 .portfolioset img {
     width:100%;
-    margin-bottom:20px;
+    margin-bottom:40px;
 }
 
 .portfolio-content {
@@ -281,6 +289,14 @@ nav a {
 /* MEDIA QUERY */
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+    .intro-title br {
+        display: inline;
+    }
+
+    .intro-space {
+        display: none;
+    }
+
     .skillset {
         width:100%;
     }
