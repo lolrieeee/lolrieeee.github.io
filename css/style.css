@@ -56,7 +56,7 @@ body, html {
   font-weight: 300;
 }
 
-body {
+#site-container {
     height:100vh;
     overflow: hidden;
 }
