@@ -1,58 +1,23 @@
-(function() {
+$('.smooth-scroll').on('click', function(e){
+    e.preventDefault();
+    console.log('hi');
 
-  'use strict';
+    var sectionId = '#' + $(this).data('section');
+    console.log(sectionId);
+    var sectionHeight = $(sectionId).height();
+    console.log(sectionHeight);
 
+    $('body').height(sectionHeight);
 
-  function off() {
-      document.getElementById("blink").style.visibility="hidden";
-      setTimeout(on, 500);
-  }
+    var sectionPosition = $(sectionId).offset().left;
+    console.log(sectionPosition);
 
-  function on() {
-      document.getElementById("blink").style.visibility="visible";
-      setTimeout(off, 500);
-  }
+    $('html, body').animate({scrollLeft:sectionPosition},800);
+});
 
-  off();
-
-  $(window).scroll(function(){
-      $(".intro").css("opacity", 1 - $(window).scrollTop() / 300);
-    });
-
-  /*win.scroll(function(){
-    scrollPosition = win.scrollTop();
-    scrollRatio = 1 - scrollPosition / 300;
-    $(".top").css("opacity", scrollRatio);
-  */
-
-  $(document).ready(function(){
-    // Add scrollspy to <body>
-    $('body').scrollspy({target: "#main-nav", offset: 50});
-
-    // Add smooth scrolling on all links inside the navbar
-    $("#main-nav a, #home a").on('click', function(event) {
-
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    });
-  });
-
-  $(function() {
-    $('body').removeClass('fade-out');
-  });
-
-
-}());
+$('.project-clicked').on('click', function(){
+    console.log('clicked');
+    $(this).siblings('.portfolio-content').height('100vh');
+    $(this).siblings('.portfolio-content').css('padding-top', '120px');
+    $(this).siblings('.portfolio-content').css('padding-bottom', '120px');
+});

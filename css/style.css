@@ -1,0 +1,238 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*=======================*/
+
+
+/* GLOBAL */
+body, html {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
+body {
+    height:100vh;
+    overflow: hidden;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+h1 {
+    font-size:60px;
+    margin-bottom:10px;
+}
+
+h2 {
+    font-weight: 300;
+    font-size:20px;
+    margin-bottom:5px;
+}
+
+h3 {
+    font-size:20px;
+    margin-bottom:10px;
+}
+
+p {
+  font-size:16px;
+  line-height:24px;
+  font-family: 'Lato', sans-serif;
+  padding-bottom:40px;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-container-centered {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+    width: 100%;
+}
+
+.container {
+    max-width:1200px;
+    box-sizing: content-box;
+    margin:0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.section-title {
+    width:100%;
+    padding:0 20px;
+    box-sizing: border-box;
+    margin-bottom:40px;
+}
+
+.section-title h3 {
+    border-bottom:4px solid #000000;
+    display: inline-block;
+    padding-bottom:5px;
+}
+
+/* nav */
+nav {
+    width:100%;
+    position: fixed;
+    top:0;
+    z-index: 9999;
+    text-align: center;
+    background: rgba(255,255,255,.5);
+    padding:10px 0;
+}
+
+nav a {
+    margin-left:10px;
+    margin-right:10px;
+}
+
+/* HOMEPAGE */
+#home {
+    width:100%;
+    min-height:100vh;
+    color:#ffffff;
+    background: #36D1DC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+/* SKILLS */
+#skills {
+    height:100vh;
+    width:100%;
+    padding:100px 0;
+    position: absolute;
+    top:0;
+    left:100%;
+    background: #FFAFBD;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffc3a0, #FFAFBD);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffc3a0, #FFAFBD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    overflow-y: scroll;
+    box-sizing: border-box;
+}
+
+.skillset {
+    width:50%;
+    padding:0 20px;
+    box-sizing: border-box;
+}
+
+/* PORTFOLIO */
+#portfolio {
+    height:100vh;
+    width:100%;
+    padding:100px 0;
+    position: absolute;
+    top:0;
+    left:200%;
+    overflow-y: scroll;
+    box-sizing: border-box;
+}
+
+.portfolioset {
+    width:50%;
+    padding:0 20px;
+    box-sizing: border-box;
+    height: auto;
+    overflow: scroll;
+}
+
+.portfolioset img {
+    width:100%;
+    margin-bottom:20px;
+}
+
+.portfolio-content {
+    background:#ffffff;
+    width:100%;
+    height:0;
+    position: fixed;
+    top:0;
+    left:0;
+    padding-top:0;
+    padding-bottom:0;
+    overflow-y: scroll;
+    box-sizing: border-box;
+    transition: .25s ease-out all;
+}
+
+/* ABOUT */
+#about {
+    min-height:100vh;
+    width:100%;
+    padding:100px 0;
+    position: absolute;
+    top:0;
+    left:300%;
+    box-sizing: border-box;
+}
+
+/* CONTACT */
+#contact {
+    min-height:100vh;
+    width:100%;
+    padding:100px 0;
+    position: absolute;
+    top:0;
+    left:400%;
+}
