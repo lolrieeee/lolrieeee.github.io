@@ -12,7 +12,7 @@ $('.smooth-scroll').on('click', function(e){
     var sectionPosition = $(sectionId).offset().left;
     console.log(sectionPosition);
 
-    $('html, body').animate({scrollLeft:sectionPosition},800);
+    $('#site-container').animate({scrollLeft:sectionPosition},800);
 });
 
 $('.project-clicked').on('click', function(){
