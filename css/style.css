@@ -244,33 +244,38 @@ nav a {
 
 /* ABOUT */
 #about {
-    min-height:100vh;
+    height:100vh;
     width:100%;
     padding:100px 0;
     position: absolute;
     top:0;
     left:300%;
+    overflow-y: scroll;
     box-sizing: border-box;
 }
 
 /* CONTACT */
 #contact {
-    min-height:100vh;
+    height:100vh;
     width:100%;
     padding:100px 0;
     position: absolute;
     top:0;
     left:400%;
+    overflow-y: scroll;
+    box-sizing: border-box;
 }
 
 /* RESUME */
 #resume {
-    min-height:100vh;
+    height:100vh;
     width:100%;
     padding:100px 0;
     position: absolute;
     top:0;
     left:500%;
+    overflow-y: scroll;
+    box-sizing: border-box;
 }
 
 /* MEDIA QUERY */
