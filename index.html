@@ -5,24 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Larry Bui | Front-End Developer</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Open+Sans:300,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Patrick+Hand" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" media="screen"charset="utf-8">
 </head>
 <body>
-    <nav>
-        <a href="#home" data-section="home" class="smooth-scroll"><img src="images/home.png" class="nav-icon"></a>
-        <a href="#skills" data-section="skills" class="smooth-scroll"><img src="images/skills.png" class="nav-icon"></a>
-        <a href="#portfolio" data-section="portfolio" class="smooth-scroll"><img src="images/portfolio.png" class="nav-icon"></a>
-        <a href="#about" data-section="about" class="smooth-scroll"><img src="images/about.png" class="nav-icon"></a>
-        <a href="#contact" data-section="contact" class="smooth-scroll"><img src="images/contact.png" class="nav-icon"></a>
-        <a href="#resume" data-section="resume" class="smooth-scroll"><img src="images/resume.png" class="nav-icon"></a>
-    </nav>
+    <div class="nav-container">
+        <nav>
+            <a href="#home" data-section="home" class="smooth-scroll"><img src="images/home.png" class="nav-icon"></a>
+            <a href="#skills" data-section="skills" class="smooth-scroll"><img src="images/skills.png" class="nav-icon"></a>
+            <a href="#portfolio" data-section="portfolio" class="smooth-scroll"><img src="images/portfolio.png" class="nav-icon"></a>
+            <a href="#about" data-section="about" class="smooth-scroll"><img src="images/about.png" class="nav-icon"></a>
+            <a href="#contact" data-section="contact" class="smooth-scroll"><img src="images/contact.png" class="nav-icon"></a>
+            <a href="#resume" data-section="resume" class="smooth-scroll"><img src="images/resume.png" class="nav-icon"></a>
+            <div id="nav-indicator">
+            </div>
+        </nav>
+    </div>
+
+    <div class="backnav-container">
+        <div class="backnav">
+                <div class="icon-space"></div>
+                <div class="icon-space"></div>
+                <div class="icon-space"></div>
+                <div class="icon-space"></div>
+                <div class="icon-space"></div>
+                <img src="images/close.png" alt="" class="close">
+        </div>
+    </div>
 
     <div id="site-container">
         <section id="home">
             <div class="flex-container-centered">
                 <div>
-                    <h1>Larry Bui</h1>
-                    <h2 class="intro-title">Web Developer<span class="intro-space"> / </span><br>Web Designer<span class="intro-space"> / </span><br>UX Designer</h2>
+                    <h1>Larry Bui<span class="intro-hi">Hi!<img src="images/bubble-tip-down.png" alt="" class="bubble-tip-down"></span></h1>
+                    <h2 class="intro-title"><span class="intro-developer-container">Web Developer<span class="intro-developer">I build websites.<img src="images/bubble-tip-up.png" alt="" class="bubble-tip-up"></span></span><span class="intro-space"> / </span><br><span class="intro-developer-container">Web Designer<span class="intro-designer">I build pretty websites.
+                        <img src="images/bubble-tip-up.png" alt="" class="bubble-tip-up"></span></span><span class="intro-space"> / </span><br><span class="intro-developer-container">UX Designer<span class="intro-ux">I build user-friendly websites.<img src="images/bubble-tip-up.png" alt="" class="bubble-tip-up"></span></span></h2>
                     <p>(I make sites that people love to see and use.)</p>
                 </div>
             </div>
@@ -113,8 +130,8 @@
                         <h3 class="project-clicked">Project 1</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
                         <div class="portfolio-content">
-                            <div class="container section-contain">
-                                <h3>Project 1 <img src="images/close.png" alt="" class="close"></h3>
+                            <div class="container-small section-contain">
+                                <h3>Project 1</h3>
                                 <img src="images/example_big.jpg" alt="">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -139,8 +156,8 @@
                         <h3 class="project-clicked">Project 2</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                         <div class="portfolio-content">
-                            <div class="container section-contain">
-                                <h3>Project 2 <img src="images/close.png" alt="" class="close"></h3>
+                            <div class="container-small section-contain">
+                                <h3>Project 2</h3>
                                 <img src="images/example2_big.jpg" alt="">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -165,8 +182,8 @@
                         <h3 class="project-clicked">Project 3</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
                         <div class="portfolio-content">
-                            <div class="container section-contain">
-                                <h3>Project 3 <img src="images/close.png" alt="" class="close"></h3>
+                            <div class="container-small section-contain">
+                                <h3>Project 3</h3>
                                 <img src="images/example3_big.jpg" alt="">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -191,8 +208,8 @@
                         <h3 class="project-clicked">Project 4</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
                         <div class="portfolio-content">
-                            <div class="container section-contain">
-                                <h3>Project 4 <img src="images/close.png" alt="" class="close"></h3>
+                            <div class="container-small section-contain">
+                                <h3>Project 4</h3>
                                 <img src="images/example4_big.jpg" alt="">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -217,8 +234,8 @@
                         <h3 class="project-clicked">Project 5</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
                         <div class="portfolio-content">
-                            <div class="container section-contain">
-                                <h3>Project 5 <img src="images/close.png" alt="" class="close"></h3>
+                            <div class="container-small section-contain">
+                                <h3>Project 5</h3>
                                 <img src="images/example5_big.jpg" alt="">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -243,8 +260,8 @@
                         <h3 class="project-clicked">Project 6</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
                         <div class="portfolio-content">
-                            <div class="container section-contain">
-                                <h3>Project 6 <img src="images/close.png" alt="" class="close"></h3>
+                            <div class="container-small section-contain">
+                                <h3>Project 6</h3>
                                 <img src="images/example6_big.jpg" alt="">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -269,8 +286,8 @@
                         <h3 class="project-clicked">Project 7</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
                         <div class="portfolio-content">
-                            <div class="container section-contain">
-                                <h3>Project 7 <img src="images/close.png" alt="" class="close"></h3>
+                            <div class="container-small section-contain">
+                                <h3>Project 7</h3>
                                 <img src="images/example7_big.jpg" alt="">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -295,8 +312,8 @@
                         <h3 class="project-clicked">Project 8</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
                         <div class="portfolio-content">
-                            <div class="container section-contain">
-                                <h3>Project 8 <img src="images/close.png" alt="" class="close"></h3>
+                            <div class="container-small section-contain">
+                                <h3>Project 8</h3>
                                 <img src="images/example8_big.jpg" alt="">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -322,7 +339,7 @@
 
 
         <section id="about">
-            <div class="container">
+            <div class="container-small">
                 <div class="flex-container">
                     <div class="section-title">
                         <h3>About</h3>
@@ -349,7 +366,7 @@
         </section>
 
         <section id="contact">
-            <div class="container">
+            <div class="container-small">
                 <div class="flex-container">
                     <div class="section-title">
                         <h3>Contact</h3>

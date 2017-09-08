@@ -111,6 +111,12 @@ p {
     margin:0 auto;
 }
 
+.container-small {
+    max-width:800px;
+    box-sizing: content-box;
+    margin:0 auto;
+}
+
 .text-center {
     text-align: center;
 }
@@ -134,11 +140,37 @@ p {
 }
 
 /* nav */
-nav {
+.nav-container {
+    background:#ffffff;
     width:100%;
+    height: 72px;
     position: fixed;
+    bottom: 0;
+    z-index: 9997
+}
+
+.backnav-container {
+    position: fixed;
+    bottom:-72px;
+    height: 72px;
+    z-index: 9999;
+    background:#ffffff;
+    width:100%;
+    transition: all ease-out .15s;
+}
+
+.backnav-container.open {
     bottom:0;
-    z-index: 9998;
+}
+
+nav {
+    width:80%;
+    max-width: 800px;
+    position: absolute;
+    bottom:0;
+    left:50%;
+    transform: translateX(-50%);
+    z-index: 9997;
     text-align: center;
     background: #ffffff;
     padding:20px 0;
@@ -146,13 +178,61 @@ nav {
     justify-content: space-around;
 }
 
+.backnav {
+    width:80%;
+    max-width: 800px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-around;
+    padding:20px 0;
+    text-align: center;
+    z-index: 9999;
+}
+
+#nav-indicator {
+    height:5px;
+    background: #2accff;
+    width:30px;
+    position: absolute;
+    left:0;
+    top:0;
+    margin-left:25px;
+    margin-right:25px;
+    transition: all ease-out .15s;
+    border-radius: 20px;
+}
+
 nav a {
+    margin-left:25px;
+    margin-right:25px;
+}
+
+.backnav div {
     margin-left:25px;
     margin-right:25px;
 }
 
 .nav-icon {
     width:30px;
+}
+
+
+.icon-space {
+    width: 30px;
+    height: 32px;
+    display: inline-block;
+}
+
+.backnav img {
+    width:30px;
+    height:30px;
+    min-height: 0;
+    margin-left: 25px;
+    margin-right:25px;
 }
 
 /* HOMEPAGE */
@@ -175,6 +255,94 @@ nav a {
 
 .intro-title br {
     display: none;
+}
+
+#home h1 {
+    position: relative;
+}
+
+.intro-hi {
+    background: #ffffff;
+    color:#000000;
+    padding:0;
+    border-radius: 20px;
+    position: absolute;
+    padding:10px 30px;
+    top:-60px;
+    right:120px;
+    font-size: 24px;
+    display: none;
+    font-weight: 300;
+}
+
+#home h1:hover .intro-hi {
+    display: block;
+}
+
+.bubble-tip-down {
+    position: absolute;
+    bottom:-12px;
+    left:30%;
+    width: 20px;
+}
+
+.bubble-tip-up {
+    position: absolute;
+    top:-12px;
+    left:30%;
+    width: 20px;
+}
+
+.intro-developer-container {
+    position: relative;
+}
+
+.intro-developer {
+    background: #ffffff;
+    padding:15px 15px;
+    color:#000000;
+    border-radius: 20px;
+    position: absolute;
+    left:-10%;
+    top:40px;
+    width:150px;
+    display: none;
+    z-index: 2;
+    font-size: 14px;
+}
+
+.intro-designer {
+    background: #ffffff;
+    padding:15px 15px;
+    color:#000000;
+    border-radius: 20px;
+    position: absolute;
+    left:-60px;
+    top:40px;
+    width:220px;
+    display: none;
+    z-index: 2;
+    font-size: 14px;
+}
+
+.intro-ux {
+    background: #ffffff;
+    padding:15px 15px;
+    color:#000000;
+    border-radius: 20px;
+    position: absolute;
+    left:-60px;
+    top:40px;
+    width:250px;
+    display: none;
+    z-index: 2;
+    font-size: 14px;
+}
+
+.intro-developer-container:hover .intro-developer,
+.intro-developer-container:hover .intro-designer,
+.intro-developer-container:hover .intro-ux {
+    display: block;
 }
 
 /* SKILLS */
@@ -220,10 +388,13 @@ nav a {
     position: relative;
 }
 
+
 .portfolioset .close {
     width:20px;
+    /*
     position: absolute;
     right:20px;
+    */
 }
 
 .portfolioset img {
@@ -243,7 +414,14 @@ nav a {
     overflow-y: scroll;
     box-sizing: content-box;
     transition: .25s ease-out all;
-    z-index: 9999;
+    z-index: 9998;
+}
+
+.portfolio-content.open {
+    height: 100vh;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    box-sizing: border-box;
 }
 
 .portfolio-content h3 {
@@ -306,6 +484,11 @@ nav a {
     }
 
     nav a {
+        margin-left:10px;
+        margin-right:10px;
+    }
+
+    #nav-indicator {
         margin-left:10px;
         margin-right:10px;
     }
