@@ -139,6 +139,11 @@ p {
     padding-right:20px;
 }
 
+.section-contain img {
+    width:100%;
+    margin-bottom:40px;
+}
+
 /* nav */
 .nav-container {
     background:#ffffff;
@@ -462,6 +467,49 @@ nav a {
     left:500%;
     overflow-y: scroll;
     box-sizing: border-box;
+}
+
+#resume .resume-name {
+    font-size:30px;
+    font-weight: 800;
+}
+
+#resume .resume-title {
+    font-size:20px;
+    font-weight: 300;
+}
+
+#resume h4 {
+    font-size:20px;
+    font-weight: 800;
+    margin-bottom:20px;
+    margin-top: 20px;
+    padding-top:20px;
+    border-top:solid #eeeeee 1px;
+}
+
+#resume .resume-work-section {
+    margin-bottom:40px;
+}
+
+#resume .resume-job {
+    font-weight: 800;
+    margin-bottom:5px;
+}
+
+#resume h5 {
+    font-weight:300;
+    margin-bottom:10px;
+}
+
+#resume ul {
+    margin-left:20px;
+}
+
+#resume ul li {
+    list-style: disc;
+    margin-bottom:10px;
+    line-height: 20px;
 }
 
 /* MEDIA QUERY */
