@@ -282,6 +282,7 @@ nav a {
 
 #home h1:hover .intro-hi,#home h1:active .intro-hi {
     display: block;
+    font-family: 'Nunito', sans-serif;
 }
 
 .bubble-tip-down {
@@ -314,6 +315,7 @@ nav a {
     display: none;
     z-index: 2;
     font-size: 14px;
+    font-family: 'Nunito', sans-serif;
 }
 
 .intro-designer {
@@ -328,6 +330,7 @@ nav a {
     display: none;
     z-index: 2;
     font-size: 14px;
+    font-family: 'Nunito', sans-serif;
 }
 
 .intro-ux {
@@ -342,6 +345,7 @@ nav a {
     display: none;
     z-index: 2;
     font-size: 14px;
+    font-family: 'Nunito', sans-serif;
 }
 
 .intro-developer-container:hover .intro-developer, .intro-developer-container:active .intro-developer,
