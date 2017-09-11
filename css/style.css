@@ -483,7 +483,9 @@ nav a {
         width:100%;
     }
 
-    nav a {
+    nav a,
+    .backnav img,
+    .backnav div {
         margin-left:10px;
         margin-right:10px;
     }
