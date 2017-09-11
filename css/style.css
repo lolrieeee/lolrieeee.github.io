@@ -275,7 +275,7 @@ nav a {
     font-weight: 300;
 }
 
-#home h1:hover .intro-hi {
+#home h1:hover .intro-hi,#home h1:active .intro-hi {
     display: block;
 }
 
@@ -339,9 +339,9 @@ nav a {
     font-size: 14px;
 }
 
-.intro-developer-container:hover .intro-developer,
-.intro-developer-container:hover .intro-designer,
-.intro-developer-container:hover .intro-ux {
+.intro-developer-container:hover .intro-developer, .intro-developer-container:active .intro-developer,
+.intro-developer-container:hover .intro-designer, .intro-developer-container:active .intro-designer,
+.intro-developer-container:hover .intro-ux, .intro-developer-container:active .intro-ux {
     display: block;
 }
 
